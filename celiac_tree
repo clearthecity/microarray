@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="ILMN_1667966 <= 8.085\ngini = 0.284\nsamples = 99\nvalue = [17, 82]\nclass = y[1]", fillcolor="#62b1ea"] ;
+1 [label="ILMN_1742824 <= 4.693\ngini = 0.148\nsamples = 87\nvalue = [7, 80]\nclass = y[1]", fillcolor="#4aa6e7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="ILMN_1695962 <= 7.5\ngini = 0.278\nsamples = 6\nvalue = [5, 1]\nclass = y[0]", fillcolor="#ea9a61"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = y[1]", fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 5\nvalue = [5, 0]\nclass = y[0]", fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label="ILMN_1662934 <= 4.024\ngini = 0.048\nsamples = 81\nvalue = [2, 79]\nclass = y[1]", fillcolor="#3e9fe6"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = y[0]", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 79\nvalue = [0, 79]\nclass = y[1]", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="ILMN_1691175 <= 4.193\ngini = 0.278\nsamples = 12\nvalue = [10, 2]\nclass = y[0]", fillcolor="#ea9a61"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = y[1]", fillcolor="#399de5"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 10\nvalue = [10, 0]\nclass = y[0]", fillcolor="#e58139"] ;
+8 -> 10 ;
+}
